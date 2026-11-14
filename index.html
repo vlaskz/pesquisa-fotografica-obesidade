@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Pesquisa fotográfica sobre obesidade — projeto extensionista. Galeria de fotos e vídeos."
+    />
+    <title>Olhares — Pesquisa Fotográfica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#topo">Olhares</a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#galeria">Fotos</a>
+        <a href="#videos">Vídeos</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+    </header>
+
+    <main id="topo">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <div class="hero-wash"></div>
+          <div class="hero-grain"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="hero-kicker" id="hero-local">Projeto extensionista</p>
+          <h1 id="hero-title">Olhares</h1>
+          <p class="hero-lead" id="hero-sub">
+            Corpo, cotidiano e saúde em registro fotográfico
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#galeria">Ver galeria</a>
+            <a class="btn btn-ghost" href="#videos">Ver vídeos</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="section" aria-labelledby="galeria-title">
+        <div class="section-head">
+          <h2 id="galeria-title">Pesquisa fotográfica</h2>
+          <p>
+            Imagens produzidas no campo. Clique para ampliar.
+          </p>
+        </div>
+        <div id="gallery" class="gallery" role="list"></div>
+      </section>
+
+      <section id="videos" class="section section-alt" aria-labelledby="videos-title">
+        <div class="section-head">
+          <h2 id="videos-title">Registros em vídeo</h2>
+          <p>Entrevistas, percursos e momentos da pesquisa.</p>
+        </div>
+        <div id="videos-list" class="videos"></div>
+      </section>
+
+      <section id="sobre" class="section" aria-labelledby="sobre-title">
+        <div class="about">
+          <h2 id="sobre-title">Sobre o projeto</h2>
+          <p id="sobre-texto"></p>
+          <p class="about-note">
+            As mídias são adicionadas em <code>media/</code> e descritas em
+            <code>media/manifest.json</code>. A cada push na branch
+            <strong>main</strong>, o site republica no GitHub Pages.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <span id="footer-brand">Olhares</span>
+        <span aria-hidden="true"> · </span>
+        <span id="footer-local">Bom Jesus da Lapa — BA</span>
+      </p>
+    </footer>
+
+    <dialog id="lightbox" class="lightbox" aria-label="Visualização ampliada">
+      <button type="button" class="lightbox-close" aria-label="Fechar">&times;</button>
+      <img id="lightbox-img" alt="" />
+      <div class="lightbox-caption">
+        <strong id="lightbox-title"></strong>
+        <p id="lightbox-text"></p>
+      </div>
+    </dialog>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

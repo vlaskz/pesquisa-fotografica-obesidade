@@ -1,0 +1,31 @@
+{
+  "titulo": "Olhares — Pesquisa Fotográfica",
+  "subtitulo": "Corpo, cotidiano e saúde em registro fotográfico",
+  "sobre": "Esta página reúne fotos e vídeos produzidos na pesquisa fotográfica sobre obesidade, no âmbito do projeto extensionista. O objetivo é ampliar o olhar sobre o tema com respeito, escuta e contexto social — sem estigma e sem sensacionalismo.",
+  "local": "Bom Jesus da Lapa — BA",
+  "fotos": [
+    {
+      "arquivo": "exemplo-01.jpg",
+      "titulo": "Exemplo — Cotidiano",
+      "legenda": "Substitua este item pelas suas fotos reais em media/fotos e atualize este manifesto."
+    },
+    {
+      "arquivo": "exemplo-02.jpg",
+      "titulo": "Exemplo — Ambiente",
+      "legenda": "Use títulos e legendas curtas, descritivas e respeitosas."
+    },
+    {
+      "arquivo": "exemplo-03.jpg",
+      "titulo": "Exemplo — Comunidade",
+      "legenda": "Evite legendas que reduzam pessoas a diagnóstico ou julgamento."
+    }
+  ],
+  "videos": [
+    {
+      "tipo": "youtube",
+      "id": "",
+      "titulo": "Depoimento / registro em vídeo",
+      "legenda": "Cole o ID do YouTube no campo id (a parte depois de v=) ou troque tipo para arquivo e use o nome em media/videos."
+    }
+  ]
+}
